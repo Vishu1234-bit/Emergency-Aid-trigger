@@ -1,0 +1,33 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disaster Fund Trigger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🚨 Disaster Detection Dashboard</h1>
+
+  <label>Disaster Type:</label>
+  <select id="disasterType">
+    <option value="Earthquake">Earthquake</option>
+    <option value="Flood">Flood</option>
+    <option value="War">War</option>
+  </select>
+
+  <label>Location:</label>
+  <input type="text" id="location" placeholder="e.g., Assam" />
+
+  <label>Source:</label>
+  <input type="text" id="source" placeholder="e.g., Reuters" />
+
+  <button onclick="verifyDisaster()">Verify Disaster</button>
+
+  <div id="result"></div>
+  <div id="triggerBtn" style="display:none;">
+    <button onclick="triggerFund()">Release Emergency Funds</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
